@@ -33,7 +33,7 @@ def generate_rss(items, output_path):
 
 
 def extract_items(page):
-    rows = page.locator("li")
+    rows = page.locator("ul > li")
     count = rows.count()
     print(f"📦 発見した記事数: {count}")
     items = []
